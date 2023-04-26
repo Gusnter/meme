@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    list-style: none;
+    text-decoration: none;
+
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;   
+}
+
+li {
+    list-style: none;
+    color: rgb(3, 3, 3);
+    cursor: pointer;
+    font-size: 30px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: #d21617;
+
+}
+
+#logo {
+    width: 200px;
+    height: 200px;
+    padding-top: 3%;
+}
+
+.actor-cards-conteiner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cards-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+.card{
+    width: 80%px;
+    height: 250px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding:0px 0px 10px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+.card:hover {
+    transform: scale(1.02);
+}
+
+.banner-1 {
+    background-image: url('https://media.istockphoto.com/id/1226386322/pt/vetorial/vector-double-line-alternative-logo-letter-w.jpg?s=612x612&w=0&k=20&c=9Pw0uTB7LBjem1wxHeef5ZQ8-q_ExNogLjxCSH_wU0Q=');
+}
+.banner-2 {
+    background-image: url("https://cdn-icons-png.flaticon.com/512/3097/3097053.png");
+} 
+.banner-3 {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx7t30niscAohg3mX4XHEzPRmfI55DlXHKC-VIKRwLuyUtAhUQboIcW8XeuioMZVEVml8&usqp=CAU");
+} 
+.banner-4 {
+    background-image: url("https://media.istockphoto.com/id/1008257372/es/vector/vector-logo-manuscrita-letra-r.jpg?s=170667a&w=0&k=20&c=N-aDl_MxrrlNuitbwpauKNBQjtagQ2b5LI1WsicNf2I=");
+} 
+.banner-5 {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5zR-mzcKAkc2VDag9DON34i9yjChacCp1giq8lqm1KQ9ZBUT21wKTy62VY8IoTn3p_nA&usqp=CAU");
+} 
+.banner-6 {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAclBMVEUAAAD///+bm5t7e3vNzc37+/tCQkJdXV3Q0NAbGxvq6urKysrZ2dnz8/NoaGi9vb0RERGQkJA4ODhzc3NHR0ff39/l5eVubm4XFxe2traoqKgwMDC5ublXV1crKyuGhoZOTk6hoaEiIiKUlJRiYmI9PT2IbAG0AAAFD0lEQVR4nO2b6XajOhCEwQ7xFgLxlkmcxVve/xUnGDumC23MvRHtc+r7qQafLgupF0SSEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhPxnyufZ+M7AuDiezI/CXDxbf2hUNO++W/yJJsHLZpwaKCZn834mxldz44+U8qqHr3j+hyC9O/HaML8IS740/MJkLa4Zx/I8mCkKlC4+CNvU8PzdyT/hI5Lf4TyjQjlPT/b5rRnKCwax/O4ATOKDtC6ltT2JcpLTCdoVUEgXd2DOpXkE5o20r2N53YWdlPAJZthth2DeSnMRy+suDNwSXt1T/CjNL7G87oJHIewkOEmwE2ncaHwKN9IMG1HyJs32vKdHPAoTaZ7CZgnLdBPL6y74FK6kXWZupUxo0mhed8GnEJ7Dd2H8yOQMR/O6Cz6FTjskBLNoXnfBp/Ao7TJvW0ijymDhVfjhmqadND5F87oLPoWJXGorYYOU7711swa8CmVunTlsqb7SqcKrsHCokHl3XkbzugtehTt5QbO6mEjTqnWvCrwKYb9s7iZQWegMFn6FEPOaEeFTmtodABV4FULectcwvfruVYFXIWSmzcwMOnU6g0WAQqgfGhbo8Zj7qb3jVyibps0KSRpMvUYN+BVCHX+tciGhw+pYC36F0IsZ2Awq21BJiEJruDjYpOvCr3AvN5TrwwgLdBHR6y74FSayVZH/jEPerTRYhCiEcPGTX0PerTRYhCiE1GV7Hi5voUmTBCn8NF/yLoe1BosQhZZwAe1wnU2aJEjhvXwcL3EPgoXOJk0SpBC2lEuhC8W/1mARpNAcLqAbvo3mckdCFMoqKTuHBZkIZDqbNEmYQggXp+M2yfxGgkWQwifTNSM5qO+YyYUQhRAu6hfBECyUNmmSMIXwmrTuqe3koNpgEaQQivk6XECT5jGm050IUii3zfpFMAQLnR39iiCFMF/330N7OGkT1+suBCmEcFF19u/lkN5gEaYQwkV1rAiChdKOfkWQQggXVWS4jY5+RZDCvbyo6uxDkwZPiykiSKEhXMhzpek2osvI8jhqgo3pMIUyXOR7rDfSPvNu6IjhSeYwhTBjX8lE5t25+bY4yMic3YM5TCGsumPyJQd6bdL8LwpbHQtNHX04S/FvClvnSOE2PHcaFdlO8Sm0dFvm8qqxqiaNzLh8CrfmH5lgQQ99cPzVqMjkw6fQtuvjMUvIu/e/rcKF3PU8Cq27PswZPLU9n9EXD5hHoTWBhnUHqXjPTRpxBtaj0HpgBMIFPLRvvyzBgzgh6laYWddT6+shOaW/LMFHM6l0K7QHbnjVDfTdpGkuGrdC+2vcTZY62P6m+wGUjUl0KnQV6uuWrCv9f5PXaN46Fbri9kNL1xUFH3Rdix+XQudxkcKg7IKCjv78JwVxKHT7eTBqq9HQpPmpDewKPcfSXOFCRZPmkp1mWOPvzobc8w321izuRN/BouYSMo4wfl5fua86wB53g9a/1hPDzLhm6kiy9u/39nCh5oz+9uRjLhOz+px6SF75alWoqN99clKceymrZ28a9mHkovXtfj2DfSelgmXx/ageGgPfZd802MPy0NaY73rPZ4D5YJUWl3WzXKezRZdFVC5mIj+dDTV+gJ/sh4dTZChHA/y8PoT3wct4tV6N3wYjLTsMIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCbpi/5jAunRz/v84AAAAASUVORK5CYII=");
+}
+.banner-7 {
+    background-image: url("https://cdn-icons-png.flaticon.com/512/6646/6646470.png");
+}
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #020202;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px) {
+    .footer-navigation{
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #banner {
+        background-position: 40%;
+    }
+
+
+
+    .cards-content {
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+}
+}
